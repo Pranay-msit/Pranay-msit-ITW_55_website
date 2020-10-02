@@ -6,42 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background-color: #6ddbee;
+            background-color: #96e6f4;
             margin: 15px;
         }
     </style>
+    <script>
+        function validate() {
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if (firstname != "" && lastname != "" && email != "" && password != "") {
+                alert("Login successfully");
+                window.location = "movieList.html";
+                return false;
+            } else {
+                alert("Please enter all feilds");
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div>
         <h2 align="center"> Login</h2>
-        <form>
-            <div class="container">
-                <table BORDER="1" class="table-width">
-                    <tr>
-                        <td align="right">First Name</td>
-                        <td><input type="text" required></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Last Name</td>
-                        <td><input type="text" required></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Username</td>
-                        <td><input type="text" required></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Password</td>
-                        <td><input type="password" required></td>
-                    </tr>
-                    <th BORDER="0" colspan="2">
-                        <div class="submit">
-                            <button id="msg" type="submit">Login</button>
-                            <span class="psw">Forgot <a href="#">password?</a></span>
-                        </div>
-                    </th>
-                </table>
-            </div>
+        <form id="form_id" method="post" name="myform"></form>
+        <div class="container">
+            <table BORDER="1" class="table-width">
+                <tr>
+                    <td align="right">First Name</td>
+                    <td><input type="text" name="firstname" id="firstname" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Last Name</td>
+                    <td><input type="text" name="lastname" id="lastname" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Email</td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Password</td>
+                    <td><input type="password" name="password" id="password" required></td>
+                </tr>
+                <th BORDER="0" colspan="2">
+                    <div class="submit">
+                        <button type="button" value="Login" id="submit" onclick="validate()">Login</button>
+                        <span class="psw">Forgot <a href="forgot.html">password?</a></span>
+                    </div>
+                </th>
+            </table>
+        </div>
         </form>
     </div>
 </body>
