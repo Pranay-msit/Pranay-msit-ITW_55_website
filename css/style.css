@@ -1,0 +1,145 @@
+.img.middle 
+{
+vertical-align: middle;
+}
+.ol
+{
+    list-style-type: lower-alpha;
+}
+
+.div {
+    border: 2px solid black;
+    padding: 25px 50px 75px 100px;
+    background-color: rgb(78, 195, 241);
+    font-size: x-large;
+    text-align: justify;
+}
+.table {
+    border-collapse: collapse;
+}
+.table, th, td {
+    font-size: x-large;
+    border: 1px solid black;
+}
+.form {
+    font-size: x-large;   
+    text-align: center;
+}
+.th, td {
+    padding: 10px;
+}
+.h1{
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-size: 5em;
+}
+.table {
+    text-align: left;
+    align-self: center;
+}
+.p {
+    font-size: x-large;
+}
+.h4 {
+    font-size: x-large;
+}
+.ol {
+    font-size: larger;
+}
+.form {
+    font-size: xx-large;
+}
+.topnav {
+overflow: hidden;
+background-color:#ffffff;
+display: flex;
+}
+.left-header{
+  width:20%;
+}
+.right-header{
+ padding-left:10px;   
+  width:100%;
+  justify-content: flex-end;
+}
+.main-body{
+    padding-top:10px;
+}
+.topnav a {
+float: left;
+color: black;
+text-align: center;
+padding: 20px 20px 20px 0;
+text-decoration: none;
+font-size: 24px;
+}
+
+.topnav a:hover {
+background-color:#96e6f4;
+color: white;
+}
+
+.topnav a.active {
+color: white;
+}
+
+/* login -form */
+input[type=text], input[type=password] {
+width: 60%;
+padding: 12px 20px;
+margin: 8px 0;
+border: 1px solid rgb(120, 120, 120);
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+button {
+background-color: rgb(27, 158, 215);
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 40%;
+font-size: 16px;
+border-radius: 12px;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+}
+
+.table-width{
+    width:50%;
+}
+
+.container {
+padding: 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+span.psw {
+text-align: center;
+font-size: 16px;
+}
+
+h2{
+    padding:20px 0 0 0;
+}
+
+@media screen and (max-width: 300px) {
+span.psw {
+    display: block;
+    float: none;
+}
+}
